@@ -1,4 +1,5 @@
-### Hallo, hier zijn mijn notities te vinden van de Aqua DART training!
+## Aqua notes
 
-- [Supply Chain DART-1](./Supply%20Chain%20(DART-1).md)
-- [Workload Protection DART-2](./Workload%20Protection%20(DART-2).md)
+Hier zijn de Aqua notes te vinden, veel plezier.
+
+![Hacker man](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnh3YXZrcHp3MjZ2OHB4OW84YTc3dnU1eHJvOTRqYXp2NHE5dWJzMyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/YQitE4YNQNahy/giphy.gif)
