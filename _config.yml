@@ -5,7 +5,7 @@ url: "https://kubilayverboom.github.io/aqua-notes/"
 
 # Build settings
 markdown: kramdown
-theme: minima
+remote_theme: sylhare/Moonwalk
+color_mode: dark
 plugins:
   - jekyll-feed
-
