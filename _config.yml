@@ -1,0 +1,11 @@
+# Site settings
+title: Aqua DARTS Notes
+
+url: "https://kubilayverboom.github.io/aqua-notes/"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
