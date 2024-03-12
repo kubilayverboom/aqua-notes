@@ -5,6 +5,6 @@ url: "https://kubilayverboom.github.io/aqua-notes/"
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-midnight
+theme: themes/jekyll-theme-moonwalk
 plugins:
   - jekyll-feed
