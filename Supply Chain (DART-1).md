@@ -5,10 +5,10 @@
 
 ## I. SCM Integration
 The first step is to add the  Hydrogic GitHub SCM in the Aqua Hub. This can be done in the `Supply Chain Security` module. Under `Integrations -> Supply Chain`. Integrating steps with an existing SCM is straight forward. Once the SCM in connected the Aqua platform will scan the repository. The results of the scan show security issues in the repository.
-![[added_github.png]]
+![added_github](./assets/added_github.png])
 
 Specifically the following vulnerabilities severity are found in the repo:
-![[vulnerabilities_severity.png]]
+![vulnerabilies_severity](./assets/vulnerabilities_severity.png)
 ### Assurance Policies
 Assurance policies are used to secure assets and to identify issues which need to addressed. There  are different types of policies and controls to monitor different type of assets. Three new Assurance Policies for code scanning will be created. The policies will fail **Builds** and **PRs** if the repository is non-compliant.
 
@@ -196,10 +196,10 @@ The SBOM can be enabled through **Release Artifact** and then the **Integrate** 
 ```
 
 Adding this step and looking in the artifacts tab, shows information about actions in commits and pull requests.
-![[100 - Study Notes/AquaSecurity/assets/artifacts.png]]
+![artifacts](./assets/artifacts.png)
 
 This also shows that some dependencies of the Docker image have vulnerabilities:
-![[vulnerable_dependencies.png]]
+![vulnerable_dependencies](./assets/vulnerable_dependencies.png)
 
 ## IV. Build Pipeline Activity Monitoring
 Pipeline Activity Monitoring  enables monitoring of the build process and ensures that no threats find their way into the artifacts at this stage of the SDLC. For this it is important that the GitHub Actions Token has the corrects permissions. 
@@ -217,7 +217,7 @@ Going to the **Build Pipelines** section shows all the pipelines that are availa
 ```
 
 With the pipeline monitor enabled, it is possible to see what the build stage does, for example in the current pipeline it shows that there are 614 suspicious activities going on. So for example:
-![[suspicious_behaviour.png]]
+![sus_behaviour](./assets/suspicious_behaviour.png)
 
 ## V. Integration with on-prem SCM
 It is also possible to integrate an on-prem SCM's in Aqau Security. When deploying on GitLab, a personal access token is required with the following privilges:
@@ -243,7 +243,7 @@ helm upgrade -i aqua-codesec aqua-helm/codesec-agent --namespace aqua-codesec \
 ```
 
 After installing the scanner it is possible to scan the repositories on the local SCM.
-![[local_scm.png]]
+![local_scm](./assets/local_scm.png)
 
 ## Summary
 
