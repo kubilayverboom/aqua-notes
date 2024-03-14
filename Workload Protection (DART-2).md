@@ -22,7 +22,7 @@ Next to being able to scan an image registry, it is also possible to deploy a sc
 
 The command that is needed to deploy the scanner is shown:
 ```bash
-docker run -d  registry.aquasec.com/scanner:2402.8.22 daemon --token <token> --host https://7b02ff4f90.cloud.aquasec.com
+docker run -d  registry.aquasec.com/scanner:2402.8.22 daemon --token ${token} --host https://7b02ff4f90.cloud.aquasec.com
 ```
 
 When the container is deployed successfully it can be listed:
@@ -34,6 +34,20 @@ After the scanner is deployed, under **Administration** -> **Integrations** the 
 
 
 ## II. Assurance Policies
+Assurance policies act as compliance gates for SDLC. They define which images and other artifact are considered safe enough to progress to production environments.
+
+For this assignment three custom Assurance Policies are created. One which checks images, one check the Kubernetes cluster and the other one check if the host system is compliant. After the custom policies are created and for example the images are scanned, it can be noted in the dashboard that all 10 images in the Hydrogic repository are non-compliant.
+
+![Non-compliant](./assets/non-compliant_images.png)
+
+For further analysis an image can be inspected to see which Assurance Policies it fails and potentials remediation to make the images compliant.
+
+![Non-compliant](./assets/detailed_policies.png)
+
+### Dynamic Threat Analysis (DTA)
+
+
+
 
 
 ## III. Main Topic 3
